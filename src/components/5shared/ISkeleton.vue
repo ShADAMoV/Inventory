@@ -1,13 +1,14 @@
 <script setup lang="ts">
 interface Props {
-  width?: number
+  width?: string
+  height?: string
 }
 
 const props = defineProps<Props>()
 </script>
 
 <template>
-  <div :style=`"width:"${width}px` class="i-skeleton" />
+  <div :style="`width:${width};height:${height};`" class="i-skeleton" />
 </template>
 
 <style lang="scss">
